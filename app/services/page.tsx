@@ -1,3 +1,9 @@
+import ServicesHero from "@/components/common/heros/ServicesHero";
+
 export default function Services() {
-  return <div>Services</div>;
+  return (
+    <main>
+      <ServicesHero />
+    </main>
+  );
 }
