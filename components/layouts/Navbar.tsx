@@ -37,7 +37,7 @@ const Navbar = () => {
     <>
       <header className="sticky top-0 z-50 w-full border-b border-border bg-card/95 backdrop-blur-md">
         <div className="section-container max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-[100px] py-4 lg:py-[20px]">
+          <div className="flex items-center justify-between h-16 lg:h-[90px] py-4 lg:py-[20px]">
             <div className="flex items-center">
               <Image
                 src="/svgs/Logo.svg"
@@ -55,11 +55,10 @@ const Navbar = () => {
                   <a
                     key={link.href}
                     href={link.href}
-                    className={`text-[18px] font-semibold transition-colors relative group ${
-                      isActive
-                        ? "text-[#009688]"
-                        : "text-muted-foreground hover:text-primary"
-                    }`}
+                    className={`text-[18px] font-semibold transition-colors relative group ${isActive
+                      ? "text-[#009688]"
+                      : "text-muted-foreground hover:text-primary"
+                      }`}
                   >
                     {link.label}
                     {isActive && (
@@ -143,11 +142,10 @@ const Navbar = () => {
                         >
                           <a
                             href={link.href}
-                            className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors ${
-                              isActive
-                                ? "text-[#009688] bg-muted/50"
-                                : "text-foreground hover:text-primary hover:bg-muted"
-                            }`}
+                            className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors ${isActive
+                              ? "text-[#009688] bg-muted/50"
+                              : "text-foreground hover:text-primary hover:bg-muted"
+                              }`}
                             onClick={toggleMobileMenu}
                           >
                             {link.label}
