@@ -38,7 +38,7 @@ const Navbar = () => {
       <header className="sticky top-0 z-50 w-full border-b border-border bg-card/95 backdrop-blur-md">
         <div className="section-container max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-[90px] py-4 lg:py-[20px]">
-            <div className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/svgs/Logo.svg"
                 alt="Logo"
@@ -46,7 +46,7 @@ const Navbar = () => {
                 height={60}
                 className="w-10 h-10 lg:w-[60px] lg:h-[60px]"
               />
-            </div>
+            </Link>
 
             <nav className="hidden lg:flex items-center gap-6 xl:gap-10 max-w-[820px]">
               {navLinks.map((link) => {
@@ -78,7 +78,6 @@ const Navbar = () => {
               </Link>
             </nav>
 
-            {/* Mobile Menu Button */}
             <button
               className="lg:hidden p-2 rounded-lg hover:bg-muted transition-colors"
               onClick={toggleMobileMenu}

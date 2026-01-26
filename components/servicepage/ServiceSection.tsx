@@ -98,7 +98,6 @@ export default function ServiceSection() {
         <section className="w-full bg-[#f2f7fb] py-12 md:py-20 lg:py-24">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center">
-                    {/* Grid Layout */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full max-w-[1312px]">
                         {services.map((service, index) => (
                             <ServiceCard
