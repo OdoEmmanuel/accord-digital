@@ -68,7 +68,6 @@ export default function BookConsultationForm() {
                 onSubmit={handleSubmit(onSubmit)}
                 className="flex flex-col gap-6"
             >
-                {/* Consultation Type */}
                 <div className="space-y-2">
                     <Label className="text-sm font-medium text-gray-700">Consultation Type</Label>
                     <Select onValueChange={(value) => setValue("consultationType", value)}>
@@ -88,7 +87,6 @@ export default function BookConsultationForm() {
                     )}
                 </div>
 
-                {/* Preferred Format */}
                 <div className="space-y-3">
                     <Label className="text-sm font-medium text-gray-700">Preferred Format</Label>
                     <RadioGroup
@@ -119,7 +117,6 @@ export default function BookConsultationForm() {
                     </RadioGroup>
                 </div>
 
-                {/* Submit Button */}
                 <Button
                     type="submit"
                     disabled={isSubmitting}

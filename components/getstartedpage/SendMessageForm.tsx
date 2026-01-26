@@ -71,7 +71,6 @@ export default function SendMessageForm() {
                 onSubmit={handleSubmit(onSubmit)}
                 className="flex flex-col h-full gap-8"
             >
-                {/* Full Name and Email Row */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                         <Label htmlFor="fullName" className="text-sm font-medium text-gray-700">
@@ -105,7 +104,6 @@ export default function SendMessageForm() {
                     </div>
                 </div>
 
-                {/* Phone Number and Company Row */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                         <Label htmlFor="phoneNumber" className="text-sm font-medium text-gray-700">
@@ -135,7 +133,6 @@ export default function SendMessageForm() {
                     </div>
                 </div>
 
-                {/* Service Interest */}
                 <div className="space-y-2">
                     <Label className="text-sm font-medium text-gray-700">Service Interest</Label>
                     <Select onValueChange={(value) => setValue("serviceInterest", value)}>
@@ -144,8 +141,8 @@ export default function SendMessageForm() {
                         </SelectTrigger>
                         <SelectContent>
                             <SelectItem value="business-loans">Business Loans</SelectItem>
-                            <SelectItem value="personal-loans">Personal Loans</SelectItem>
-                            <SelectItem value="investment">Investment Services</SelectItem>
+                            <SelectItem value="investment">Investment Advisory</SelectItem>
+                            <SelectItem value="personal-loans">Digital Banking Solutions</SelectItem>
                             <SelectItem value="financial-planning">Financial Planning</SelectItem>
                             <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
@@ -155,7 +152,6 @@ export default function SendMessageForm() {
                     )}
                 </div>
 
-                {/* Message */}
                 <div className="space-y-2 flex-1 flex flex-col">
                     <Label htmlFor="message" className="text-sm font-medium text-gray-700">
                         Message
@@ -171,7 +167,6 @@ export default function SendMessageForm() {
                     )}
                 </div>
 
-                {/* Preferred Contact Method */}
                 <div className="space-y-5">
                     <Label className="text-sm font-medium text-gray-700">Preferred Contact Method</Label>
                     <RadioGroup
@@ -202,7 +197,6 @@ export default function SendMessageForm() {
                     </RadioGroup>
                 </div>
 
-                {/* Submit Button */}
                 <Button
                     type="submit"
                     disabled={isSubmitting}

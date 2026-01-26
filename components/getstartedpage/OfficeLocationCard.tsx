@@ -8,7 +8,7 @@ export default function OfficeLocationCard() {
         <div
             className="bg-white rounded-xl flex flex-col justify-between w-full"
             style={{
-                maxWidth: "100%", // Changed from fixed 648px
+                maxWidth: "100%",
                 height: "auto",
                 minHeight: "450px",
                 padding: "32px",
@@ -20,7 +20,6 @@ export default function OfficeLocationCard() {
                 </h2>
 
                 <div className="space-y-8">
-                    {/* Address */}
                     <div className="flex gap-4">
                         <MapPin className="w-6 h-6 text-gray-400 flex-shrink-0 mt-1" />
                         <div>
@@ -35,7 +34,6 @@ export default function OfficeLocationCard() {
                         </div>
                     </div>
 
-                    {/* Business Hours */}
                     <div className="flex gap-4">
                         <Clock className="w-6 h-6 text-gray-400 flex-shrink-0 mt-1" />
                         <div>

@@ -34,7 +34,6 @@ export default function DirectContactCard() {
                     </div>
                 </div>
 
-                {/* Email Support */}
                 <div
                     className="flex flex-col sm:flex-row items-start sm:items-center rounded-xl transition-colors w-full bg-[#F9F9FD]"
                     style={{
@@ -53,7 +52,6 @@ export default function DirectContactCard() {
                     </div>
                 </div>
 
-                {/* WhatsApp Business */}
                 <div
                     className="flex flex-col sm:flex-row items-start sm:items-center rounded-xl transition-colors w-full bg-[#F9F9FD]"
                     style={{
