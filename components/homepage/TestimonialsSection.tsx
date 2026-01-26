@@ -114,7 +114,6 @@ export default function TestimonialsSection() {
     return (
         <section className="w-full py-16 md:py-20 bg-[#F2F9FF]">
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Header */}
                 <div className="max-w-[1012px] mx-auto text-center mb-16">
                     <h2 className="font-inter font-bold text-[30px] leading-[48px] md:text-[56px] md:leading-[64px] text-[#111827] mb-6">
                         What Our Clients Say
@@ -124,9 +123,7 @@ export default function TestimonialsSection() {
                     </p>
                 </div>
 
-                {/* Carousel Container */}
                 <div className="relative">
-                    {/* Cards Container */}
                     <div className="overflow-hidden">
                         <div
                             className="flex gap-8 transition-transform duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)]"
@@ -137,17 +134,14 @@ export default function TestimonialsSection() {
                                     key={index}
                                     className="flex-shrink-0 w-full sm:w-[402px] min-h-[318px] bg-white rounded-[32px] p-8 flex flex-col"
                                 >
-                                    {/* Star Rating */}
                                     <div className="mb-6">
                                         <StarRating rating={testimonial.rating} />
                                     </div>
 
-                                    {/* Quote */}
                                     <p className="text-[16px] leading-[24px] text-[#4B5563] flex-grow mb-6">
                                         "{testimonial.quote}"
                                     </p>
 
-                                    {/* Client Info */}
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full bg-[#009688] flex items-center justify-center text-white font-bold text-sm">
                                             {testimonial.initials}
@@ -166,9 +160,7 @@ export default function TestimonialsSection() {
                         </div>
                     </div>
 
-                    {/* Navigation */}
                     <div className="flex items-center justify-center gap-4 mt-10">
-                        {/* Previous Button */}
                         <button
                             onClick={goToPrevious}
                             disabled={currentIndex === 0}
@@ -177,7 +169,6 @@ export default function TestimonialsSection() {
                             <ChevronLeft className="w-5 h-5" />
                         </button>
 
-                        {/* Dots */}
                         <div className="flex gap-2">
                             {Array.from({ length: maxIndex + 1 }).map((_, index) => (
                                 <button
@@ -191,7 +182,6 @@ export default function TestimonialsSection() {
                             ))}
                         </div>
 
-                        {/* Next Button */}
                         <button
                             onClick={goToNext}
                             disabled={currentIndex === maxIndex}

@@ -51,7 +51,6 @@ export default function ServicesSection() {
     return (
         <section className="w-full py-16 md:py-20 bg-[#F8FCFF]">
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Header */}
                 <div className="max-w-[1012px] mx-auto text-center mb-16">
                     <h2 className="font-inter font-bold text-[30px] leading-[48px] md:text-[56px] md:leading-[64px] text-[#111827] mb-6">
                         Our Financial Services
@@ -63,7 +62,6 @@ export default function ServicesSection() {
                     </p>
                 </div>
 
-                {/* Services Grid */}
                 <div className="flex flex-col gap-16">
                     {services.map((service, index) => (
                         <div
@@ -71,7 +69,6 @@ export default function ServicesSection() {
                             className={`flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
                                 }`}
                         >
-                            {/* Card */}
                             <div className="w-full lg:w-[480px] min-h-[322px] bg-white rounded-[10px] pt-[34px] pr-[20px] pb-[34px] pl-[20px] shadow-sm hover:shadow-md transition-shadow flex flex-col">
                                 <div className="mb-6">
                                     <Image
@@ -89,7 +86,6 @@ export default function ServicesSection() {
                                     {service.description}
                                 </p>
 
-                                {/* Buttons */}
                                 <div className="flex gap-3 mt-auto">
                                     <button className="px-4 py-2 border border-[#009688] text-[#059669] rounded-md font-medium text-sm cursor-pointer transition-colors flex items-center gap-2">
                                         Read More

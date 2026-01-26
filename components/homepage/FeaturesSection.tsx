@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const features = [
     {
@@ -43,7 +44,6 @@ export default function FeaturesSection() {
                     </p>
                 </div>
 
-                {/* Feature Cards */}
                 <div className="flex flex-wrap justify-between gap-4 w-full px-6">
                     {features.map((feature, index) => (
                         <div
@@ -78,8 +78,7 @@ export default function FeaturesSection() {
                     ))}
                 </div>
 
-                {/* Bottom CTA */}
-                <div className="mt-16">
+                <Link href="/about" className="mt-16">
                     <Button
                         variant="outline"
                         className="h-12 px-8 border border-[#111827] text-[#111827] hover:bg-gray-50 text-base font-semibold rounded-lg cursor-pointer"
@@ -87,7 +86,7 @@ export default function FeaturesSection() {
                         Learn More About Us
                         <ArrowRight className="ml-2 w-5 h-5" />
                     </Button>
-                </div>
+                </Link>
             </div>
         </section>
     );
