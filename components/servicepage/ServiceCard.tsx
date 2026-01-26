@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 interface ServiceCardProps {
     title: string;
@@ -54,10 +55,12 @@ export default function ServiceCard({
                 </div>
             </div>
 
-            <button className="flex items-center justify-between w-full h-14 bg-[#001F3F] text-white rounded-[12px] px-6 py-4 hover:bg-opacity-90 transition-all group mt-2">
-                <span className="font-medium text-base font-inter whitespace-nowrap overflow-hidden text-ellipsis mr-2">{buttonText}</span>
-                <ArrowRight className="w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
-            </button>
+            <Link href="/get-started" className="w-full mt-2">
+                <button className="flex items-center justify-between w-full h-14 bg-[#001F3F] text-white rounded-[12px] px-6 py-4 hover:bg-opacity-90 transition-all group">
+                    <span className="font-medium text-base font-inter whitespace-nowrap overflow-hidden text-ellipsis mr-2">{buttonText}</span>
+                    <ArrowRight className="w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                </button>
+            </Link>
         </div>
     );
 }
