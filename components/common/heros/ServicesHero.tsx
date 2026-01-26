@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ServicesHero() {
   return (
-    <section className="relative h-[540px] w-full overflow-hidden bg-black">
+    <section className="relative h-135 w-full overflow-hidden bg-black">
       <div className="absolute inset-0 w-full h-full">
         <Image
           src="/hero/serviceHero.jpg"
