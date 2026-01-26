@@ -9,8 +9,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Accord",
-  description: "Accord is a platform for managing your business",
+  title: {
+    default: "Accord - Digital Financial Services",
+    template: "%s | Accord",
+  },
+  description:
+    "Empowering individuals, businesses, and institutions across Africa with comprehensive digital financial solutions.",
 };
 
 export default function RootLayout({
